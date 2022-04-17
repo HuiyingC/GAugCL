@@ -3,7 +3,7 @@
 
 ## Prerequisites
 
-PyGCL needs the following packages to be installed beforehand:
+GAugCL needs the following packages to be installed beforehand:
 
 * Python 3.8+
 * PyTorch 1.9+
