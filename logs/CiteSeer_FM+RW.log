@@ -1,0 +1,24 @@
+=================================================================
+walk_length_ratio=0.1, RWSampling_walk_length=333
+(E): Best test F1Mi=0.6527, F1Ma=0.5570
+=================================================================
+walk_length_ratio=0.2, RWSampling_walk_length=665
+(E): Best test F1Mi=0.6377, F1Ma=0.5475
+=================================================================
+walk_length_ratio=0.3, RWSampling_walk_length=998
+(E): Best test F1Mi=0.5988, F1Ma=0.5167
+=================================================================
+walk_length_ratio=0.4, RWSampling_walk_length=1331
+(E): Best test F1Mi=0.6497, F1Ma=0.5698
+=================================================================
+walk_length_ratio=0.5, RWSampling_walk_length=1664
+(E): Best test F1Mi=0.6677, F1Ma=0.6007
+=================================================================
+walk_length_ratio=0.6, RWSampling_walk_length=1996
+(E): Best test F1Mi=0.6497, F1Ma=0.5539
+=================================================================
+walk_length_ratio=0.7, RWSampling_walk_length=2329
+(E): Best test F1Mi=0.6737, F1Ma=0.5839
+=================================================================
+walk_length_ratio=0.8, RWSampling_walk_length=2662
+(E): Best test F1Mi=0.6198, F1Ma=0.5494

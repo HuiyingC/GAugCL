@@ -1,0 +1,148 @@
+Here are baseline results.
+aug=[A.EdgeRemoving(pe=0.1), A.NodeDropping(pn=0.1), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6617, F1Ma=0.5858
+aug=[A.EdgeRemoving(pe=0.1), A.NodeDropping(pn=0.2), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.5689, F1Ma=0.5057
+aug=[A.EdgeRemoving(pe=0.1), A.NodeDropping(pn=0.3), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6677, F1Ma=0.5851
+aug=[A.EdgeRemoving(pe=0.1), A.NodeDropping(pn=0.4), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6407, F1Ma=0.5628
+aug=[A.EdgeRemoving(pe=0.1), A.NodeDropping(pn=0.5), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6527, F1Ma=0.5597
+aug=[A.EdgeRemoving(pe=0.1), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6826, F1Ma=0.5888
+aug=[A.EdgeRemoving(pe=0.1), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.7036, F1Ma=0.6074
+aug=[A.EdgeRemoving(pe=0.2), A.NodeDropping(pn=0.1), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.7126, F1Ma=0.6147
+aug=[A.EdgeRemoving(pe=0.2), A.NodeDropping(pn=0.2), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6587, F1Ma=0.5665
+aug=[A.EdgeRemoving(pe=0.2), A.NodeDropping(pn=0.3), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6946, F1Ma=0.5894
+aug=[A.EdgeRemoving(pe=0.2), A.NodeDropping(pn=0.4), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6018, F1Ma=0.5157
+aug=[A.EdgeRemoving(pe=0.2), A.NodeDropping(pn=0.5), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6347, F1Ma=0.5568
+aug=[A.EdgeRemoving(pe=0.2), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6497, F1Ma=0.5617
+aug=[A.EdgeRemoving(pe=0.2), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6257, F1Ma=0.5290
+aug=[A.EdgeRemoving(pe=0.3), A.NodeDropping(pn=0.1), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6587, F1Ma=0.5699
+aug=[A.EdgeRemoving(pe=0.3), A.NodeDropping(pn=0.2), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.7006, F1Ma=0.6110
+aug=[A.EdgeRemoving(pe=0.3), A.NodeDropping(pn=0.3), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6617, F1Ma=0.5728
+aug=[A.EdgeRemoving(pe=0.3), A.NodeDropping(pn=0.4), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6677, F1Ma=0.5700
+aug=[A.EdgeRemoving(pe=0.3), A.NodeDropping(pn=0.5), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6796, F1Ma=0.5835
+aug=[A.EdgeRemoving(pe=0.3), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6946, F1Ma=0.5952
+aug=[A.EdgeRemoving(pe=0.3), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6946, F1Ma=0.6078
+aug=[A.EdgeRemoving(pe=0.4), A.NodeDropping(pn=0.1), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6856, F1Ma=0.6046
+aug=[A.EdgeRemoving(pe=0.4), A.NodeDropping(pn=0.2), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6467, F1Ma=0.5615
+aug=[A.EdgeRemoving(pe=0.4), A.NodeDropping(pn=0.3), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6437, F1Ma=0.5752
+aug=[A.EdgeRemoving(pe=0.4), A.NodeDropping(pn=0.4), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6407, F1Ma=0.5546
+aug=[A.EdgeRemoving(pe=0.4), A.NodeDropping(pn=0.5), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6437, F1Ma=0.5555
+aug=[A.EdgeRemoving(pe=0.4), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6946, F1Ma=0.5910
+aug=[A.EdgeRemoving(pe=0.4), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6946, F1Ma=0.5952
+aug=[A.EdgeRemoving(pe=0.5), A.NodeDropping(pn=0.1), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6647, F1Ma=0.5756
+aug=[A.EdgeRemoving(pe=0.5), A.NodeDropping(pn=0.2), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6377, F1Ma=0.5559
+aug=[A.EdgeRemoving(pe=0.5), A.NodeDropping(pn=0.3), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6737, F1Ma=0.5835
+aug=[A.EdgeRemoving(pe=0.5), A.NodeDropping(pn=0.4), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6497, F1Ma=0.5711
+aug=[A.EdgeRemoving(pe=0.5), A.NodeDropping(pn=0.5), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6497, F1Ma=0.5671
+aug=[A.EdgeRemoving(pe=0.5), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6677, F1Ma=0.5700
+aug=[A.EdgeRemoving(pe=0.5), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6437, F1Ma=0.5538
+aug=[A.EdgeRemoving(pe=0.6), A.NodeDropping(pn=0.1), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6228, F1Ma=0.5397
+aug=[A.EdgeRemoving(pe=0.6), A.NodeDropping(pn=0.2), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6557, F1Ma=0.5556
+aug=[A.EdgeRemoving(pe=0.6), A.NodeDropping(pn=0.3), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6377, F1Ma=0.5531
+aug=[A.EdgeRemoving(pe=0.6), A.NodeDropping(pn=0.4), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6916, F1Ma=0.5949
+aug=[A.EdgeRemoving(pe=0.6), A.NodeDropping(pn=0.5), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6287, F1Ma=0.5488
+aug=[A.EdgeRemoving(pe=0.6), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6976, F1Ma=0.6069
+aug=[A.EdgeRemoving(pe=0.6), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6707, F1Ma=0.5755
+aug=[A.EdgeRemoving(pe=0.7), A.NodeDropping(pn=0.1), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.7006, F1Ma=0.6022
+aug=[A.EdgeRemoving(pe=0.7), A.NodeDropping(pn=0.2), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6707, F1Ma=0.5764
+aug=[A.EdgeRemoving(pe=0.7), A.NodeDropping(pn=0.3), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.7066, F1Ma=0.6098
+aug=[A.EdgeRemoving(pe=0.7), A.NodeDropping(pn=0.4), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6886, F1Ma=0.6097
+aug=[A.EdgeRemoving(pe=0.7), A.NodeDropping(pn=0.5), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6677, F1Ma=0.5779
+aug=[A.EdgeRemoving(pe=0.7), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6766, F1Ma=0.5794
+aug=[A.EdgeRemoving(pe=0.7), A.NodeDropping(pn=0.7), A.FeatureMasking(pf=0.3)]
+====================================================================================
+(E): Best test F1Mi=0.6467, F1Ma=0.5605

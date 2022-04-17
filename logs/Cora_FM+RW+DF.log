@@ -1,0 +1,36 @@
+=================================================================
+RWSampling_walk_length=10, PPRDiffusion_alpha=0.01
+(E): Best test F1Mi=0.6103, F1Ma=0.4648
+=================================================================
+RWSampling_walk_length=10, PPRDiffusion_alpha=0.05
+(E): Best test F1Mi=0.5699, F1Ma=0.4165
+=================================================================
+RWSampling_walk_length=10, PPRDiffusion_alpha=0.1
+(E): Best test F1Mi=0.5662, F1Ma=0.3938
+=================================================================
+RWSampling_walk_length=30, PPRDiffusion_alpha=0.01
+(E): Best test F1Mi=0.4081, F1Ma=0.2608
+=================================================================
+RWSampling_walk_length=30, PPRDiffusion_alpha=0.05
+(E): Best test F1Mi=0.5699, F1Ma=0.4882
+=================================================================
+RWSampling_walk_length=30, PPRDiffusion_alpha=0.1
+(E): Best test F1Mi=0.5074, F1Ma=0.3850
+=================================================================
+RWSampling_walk_length=50, PPRDiffusion_alpha=0.01
+(E): Best test F1Mi=0.5074, F1Ma=0.3054
+=================================================================
+RWSampling_walk_length=50, PPRDiffusion_alpha=0.05
+(E): Best test F1Mi=0.5221, F1Ma=0.3978
+=================================================================
+RWSampling_walk_length=50, PPRDiffusion_alpha=0.1
+(E): Best test F1Mi=0.5588, F1Ma=0.4412
+=================================================================
+RWSampling_walk_length=100, PPRDiffusion_alpha=0.01
+(E): Best test F1Mi=0.5221, F1Ma=0.3136
+=================================================================
+RWSampling_walk_length=100, PPRDiffusion_alpha=0.05
+(E): Best test F1Mi=0.5147, F1Ma=0.4001
+=================================================================
+RWSampling_walk_length=100, PPRDiffusion_alpha=0.1
+(E): Best test F1Mi=0.5846, F1Ma=0.4844

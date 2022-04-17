@@ -1,0 +1,674 @@
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=2, walk_length_ratio=0.1, RWSampling_walk_length=271
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=2, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6912, F1Ma=0.5939
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=3, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.7206, F1Ma=0.6224
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=4, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.7279, F1Ma=0.6657
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=5, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6618, F1Ma=0.5688
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=2, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6801, F1Ma=0.5954
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=3, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6324, F1Ma=0.5291
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=4, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.7022, F1Ma=0.6050
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=5, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6875, F1Ma=0.6336
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=2, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6912, F1Ma=0.6051
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=3, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6838, F1Ma=0.5884
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=4, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.7941, F1Ma=0.7621
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=5, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.7243, F1Ma=0.5776
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=2, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6912, F1Ma=0.5637
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=3, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6507, F1Ma=0.5700
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=4, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6471, F1Ma=0.5702
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=5, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.7316, F1Ma=0.6292
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=2, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6912, F1Ma=0.5682
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=3, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.7096, F1Ma=0.6438
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=4, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6949, F1Ma=0.5212
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=5, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6838, F1Ma=0.6505
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=2, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6691, F1Ma=0.5908
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=3, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6397, F1Ma=0.5500
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=4, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6618, F1Ma=0.6498
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=5, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.5956, F1Ma=0.5108
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=2, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6287, F1Ma=0.5757
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=3, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6471, F1Ma=0.5231
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=4, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.7059, F1Ma=0.5391
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=5, walk_length_ratio=0.1, RWSampling_walk_length=271
+(E): Best test F1Mi=0.6544, F1Ma=0.5249
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=2, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6581, F1Ma=0.5595
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=3, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6324, F1Ma=0.5467
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=4, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6728, F1Ma=0.5815
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=5, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.5735, F1Ma=0.4494
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=2, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.7022, F1Ma=0.6410
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=3, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6140, F1Ma=0.5150
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=4, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.7059, F1Ma=0.6154
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=5, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6728, F1Ma=0.5861
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=2, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6949, F1Ma=0.5662
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=3, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6581, F1Ma=0.5227
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=4, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6875, F1Ma=0.5944
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=5, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6287, F1Ma=0.5272
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=2, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.7132, F1Ma=0.6231
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=3, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6838, F1Ma=0.6165
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=4, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6728, F1Ma=0.6304
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=5, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6434, F1Ma=0.6202
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=2, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.7279, F1Ma=0.7067
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=3, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6801, F1Ma=0.6503
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=4, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.7610, F1Ma=0.7022
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=5, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.7059, F1Ma=0.6111
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=2, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6728, F1Ma=0.5462
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=3, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6654, F1Ma=0.5692
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=4, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6801, F1Ma=0.6351
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=5, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.7500, F1Ma=0.7037
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=2, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6103, F1Ma=0.5109
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=3, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6765, F1Ma=0.5432
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=4, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6176, F1Ma=0.5501
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=5, walk_length_ratio=0.2, RWSampling_walk_length=542
+(E): Best test F1Mi=0.6949, F1Ma=0.6287
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=2, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6985, F1Ma=0.6206
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=3, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6875, F1Ma=0.5980
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=4, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6324, F1Ma=0.4699
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=5, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6654, F1Ma=0.6246
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=2, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6949, F1Ma=0.6590
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=3, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6949, F1Ma=0.6350
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=4, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.7426, F1Ma=0.6634
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=5, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.7059, F1Ma=0.6185
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=2, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6103, F1Ma=0.5119
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=3, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.7426, F1Ma=0.6902
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=4, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6728, F1Ma=0.6172
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=5, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6581, F1Ma=0.5592
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=2, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6507, F1Ma=0.5532
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=3, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.5993, F1Ma=0.5621
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=4, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.7463, F1Ma=0.6826
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=5, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6691, F1Ma=0.5106
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=2, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6691, F1Ma=0.5467
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=3, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6618, F1Ma=0.5538
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=4, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6654, F1Ma=0.6118
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=5, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.7022, F1Ma=0.6570
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=2, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6912, F1Ma=0.5984
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=3, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.7279, F1Ma=0.6439
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=4, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.7426, F1Ma=0.6841
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=5, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6250, F1Ma=0.5652
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=2, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6103, F1Ma=0.5530
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=3, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6949, F1Ma=0.6650
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=4, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.6838, F1Ma=0.6674
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=5, walk_length_ratio=0.3, RWSampling_walk_length=812
+(E): Best test F1Mi=0.7353, F1Ma=0.6648
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=2, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.7096, F1Ma=0.6759
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=3, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6471, F1Ma=0.5920
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=4, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6324, F1Ma=0.4762
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=5, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.7096, F1Ma=0.6244
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=2, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6765, F1Ma=0.5614
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=3, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6765, F1Ma=0.5361
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=4, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6654, F1Ma=0.5351
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=5, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6397, F1Ma=0.5678
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=2, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.7169, F1Ma=0.6448
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=3, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.7206, F1Ma=0.6463
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=4, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6801, F1Ma=0.5763
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=5, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6801, F1Ma=0.5795
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=2, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6618, F1Ma=0.5320
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=3, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6397, F1Ma=0.5696
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=4, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.7022, F1Ma=0.6149
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=5, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.7757, F1Ma=0.7235
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=2, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6801, F1Ma=0.6163
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=3, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6838, F1Ma=0.5839
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=4, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6618, F1Ma=0.5015
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=5, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6949, F1Ma=0.6056
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=2, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6801, F1Ma=0.6139
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=3, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6287, F1Ma=0.4915
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=4, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6801, F1Ma=0.5833
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=5, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.7316, F1Ma=0.6803
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=2, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.7022, F1Ma=0.6477
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=3, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.6949, F1Ma=0.5712
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=4, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.7206, F1Ma=0.6323
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=5, walk_length_ratio=0.4, RWSampling_walk_length=1083
+(E): Best test F1Mi=0.7206, F1Ma=0.6068
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=2, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6397, F1Ma=0.5515
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=3, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6765, F1Ma=0.5870
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=4, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6471, F1Ma=0.4750
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=5, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.7132, F1Ma=0.5927
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=2, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6324, F1Ma=0.5422
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=3, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.7096, F1Ma=0.6258
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=4, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6691, F1Ma=0.6041
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=5, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6838, F1Ma=0.5709
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=2, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6949, F1Ma=0.6015
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=3, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6765, F1Ma=0.6236
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=4, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.7022, F1Ma=0.6281
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=5, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6765, F1Ma=0.6236
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=2, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6949, F1Ma=0.6448
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=3, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.7096, F1Ma=0.6671
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=4, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6397, F1Ma=0.5588
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=5, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.7463, F1Ma=0.6321
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=2, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6912, F1Ma=0.5648
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=3, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6507, F1Ma=0.5720
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=4, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.7243, F1Ma=0.6825
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=5, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6801, F1Ma=0.5626
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=2, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.7206, F1Ma=0.6870
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=3, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.7022, F1Ma=0.5602
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=4, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6949, F1Ma=0.6205
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=5, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.7279, F1Ma=0.6803
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=2, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6066, F1Ma=0.5265
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=3, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6912, F1Ma=0.6931
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=4, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.6581, F1Ma=0.6062
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=5, walk_length_ratio=0.5, RWSampling_walk_length=1354
+(E): Best test F1Mi=0.7169, F1Ma=0.6453
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=2, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6654, F1Ma=0.5792
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=3, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6691, F1Ma=0.5531
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=4, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.5662, F1Ma=0.4320
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=5, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6985, F1Ma=0.6246
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=2, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6949, F1Ma=0.6588
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=3, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6618, F1Ma=0.6024
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=4, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6985, F1Ma=0.5903
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=5, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6213, F1Ma=0.5658
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=2, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6581, F1Ma=0.4829
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=3, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6507, F1Ma=0.5995
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=4, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6912, F1Ma=0.5680
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=5, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.7022, F1Ma=0.6627
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=2, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.7132, F1Ma=0.6641
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=3, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.7537, F1Ma=0.6413
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=4, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6434, F1Ma=0.5439
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=5, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6250, F1Ma=0.5711
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=2, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6949, F1Ma=0.6105
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=3, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6912, F1Ma=0.6706
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=4, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6360, F1Ma=0.4790
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=5, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6618, F1Ma=0.5266
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=2, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6765, F1Ma=0.6074
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=3, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6581, F1Ma=0.5591
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=4, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6397, F1Ma=0.5720
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=5, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.7206, F1Ma=0.6474
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=2, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6213, F1Ma=0.5872
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=3, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6397, F1Ma=0.5382
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=4, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6985, F1Ma=0.6600
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=5, walk_length_ratio=0.6, RWSampling_walk_length=1625
+(E): Best test F1Mi=0.6838, F1Ma=0.6070
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=2, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6949, F1Ma=0.5327
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=3, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.7022, F1Ma=0.6459
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=4, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.7059, F1Ma=0.6512
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=5, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.7243, F1Ma=0.6215
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=2, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6985, F1Ma=0.5993
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=3, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6654, F1Ma=0.5604
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=4, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.7243, F1Ma=0.6381
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=5, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6250, F1Ma=0.5011
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=2, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6103, F1Ma=0.5461
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=3, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6801, F1Ma=0.5915
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=4, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6397, F1Ma=0.5711
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=5, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6213, F1Ma=0.5252
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=2, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6838, F1Ma=0.6114
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=3, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6691, F1Ma=0.5805
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=4, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6801, F1Ma=0.5676
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=5, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6544, F1Ma=0.5601
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=2, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.5956, F1Ma=0.4968
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=3, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6654, F1Ma=0.5662
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=4, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6875, F1Ma=0.5917
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=5, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6875, F1Ma=0.6333
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=2, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6765, F1Ma=0.5895
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=3, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6875, F1Ma=0.5267
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=4, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6838, F1Ma=0.6100
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=5, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6581, F1Ma=0.5741
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=2, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.7206, F1Ma=0.6280
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=3, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6654, F1Ma=0.5412
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=4, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.6875, F1Ma=0.6017
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=5, walk_length_ratio=0.7, RWSampling_walk_length=1896
+(E): Best test F1Mi=0.7096, F1Ma=0.6275
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=2, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6618, F1Ma=0.6124
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=3, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6691, F1Ma=0.5792
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=4, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6066, F1Ma=0.4233
+=================================================================
+k_ratio=0.1, k=271, KhopSubgraph_num_hops=5, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.7022, F1Ma=0.6233
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=2, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6912, F1Ma=0.6648
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=3, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6140, F1Ma=0.5331
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=4, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6838, F1Ma=0.6132
+=================================================================
+k_ratio=0.2, k=542, KhopSubgraph_num_hops=5, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.7279, F1Ma=0.6458
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=2, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6434, F1Ma=0.5184
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=3, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6507, F1Ma=0.5275
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=4, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6434, F1Ma=0.5303
+=================================================================
+k_ratio=0.3, k=812, KhopSubgraph_num_hops=5, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6801, F1Ma=0.5647
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=2, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6213, F1Ma=0.5071
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=3, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6434, F1Ma=0.5335
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=4, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6471, F1Ma=0.5302
+=================================================================
+k_ratio=0.4, k=1083, KhopSubgraph_num_hops=5, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6471, F1Ma=0.5580
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=2, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6985, F1Ma=0.5733
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=3, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.7390, F1Ma=0.6272
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=4, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.7022, F1Ma=0.5909
+=================================================================
+k_ratio=0.5, k=1354, KhopSubgraph_num_hops=5, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6875, F1Ma=0.5891
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=2, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.7426, F1Ma=0.7255
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=3, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6691, F1Ma=0.5536
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=4, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6838, F1Ma=0.5750
+=================================================================
+k_ratio=0.6, k=1625, KhopSubgraph_num_hops=5, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6728, F1Ma=0.5441
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=2, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6618, F1Ma=0.5559
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=3, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.7096, F1Ma=0.6040
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=4, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.6618, F1Ma=0.5327
+=================================================================
+k_ratio=0.7, k=1896, KhopSubgraph_num_hops=5, walk_length_ratio=0.8, RWSampling_walk_length=2166
+(E): Best test F1Mi=0.5956, F1Ma=0.4967
