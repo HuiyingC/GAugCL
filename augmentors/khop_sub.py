@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from torch import Tensor
 from torch_geometric.utils.num_nodes import maybe_num_nodes
 from pagerank import topk_idx
-from dgl.data import CoraGraphDataset, CiteseerGraphDataset
+from dgl.data import CoraGraphDataset, CiteseerGraphDataset, PubmedGraphDataset
 
 
 # updated from torch_geometric.utils
@@ -126,12 +126,15 @@ class KhopSubgraph(Augmentor):
         x, edge_index, edge_weights = g.unfold()
 
         # pr_topk = topk_idx(cora, self.N, DAMP=0.85, K=100, k=self.k)
-        pr_topk = topk_idx(citeseer, self.N, DAMP=0.85, K=100, k=self.k)
+        # pr_topk = topk_idx(citeseer, self.N, DAMP=0.85, K=100, k=self.k)
+        pr_topk = topk_idx(pumb, self.N, DAMP=0.85, K=100, k=self.k)
         topk_subset = pr_topk[1]
         # print('topk_subset', topk_subset)
 
         # trick for citeseer dataset error: IndexError: index out of range in self
-        trick = torch.tensor([3326])
+        # trick = torch.tensor([3326])
+        trick = torch.tensor([19716])
+
         topk_subset = torch.cat((topk_subset,trick))
 
         # extract khop for every node_idx in topk subset
@@ -144,6 +147,7 @@ class KhopSubgraph(Augmentor):
 
 
 # cora = CoraGraphDataset()[0]
-citeseer = CiteseerGraphDataset()[0]
+# citeseer = CiteseerGraphDataset()[0]
+pumb = PubmedGraphDataset()[0]
 
 

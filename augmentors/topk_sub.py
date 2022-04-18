@@ -2,7 +2,7 @@ import torch
 from augmentors.augmentor import Graph, Augmentor
 from torch_geometric.utils import subgraph
 from pagerank import topk_idx
-from dgl.data import CoraGraphDataset, CiteseerGraphDataset
+from dgl.data import CoraGraphDataset, CiteseerGraphDataset, PubmedGraphDataset
 
 
 
@@ -27,7 +27,8 @@ class TopKSubgraph(Augmentor):
 
         # compute node influence by pagerank and extract topk subgraph
         # pr_topk = topk_idx(cora, self.N, DAMP=0.85, K=100, k=self.k)
-        pr_topk = topk_idx(citeseer, self.N, DAMP=0.85, K=100, k=self.k)
+        # pr_topk = topk_idx(citeseer, self.N, DAMP=0.85, K=100, k=self.k)
+        pr_topk = topk_idx(pumb, self.N, DAMP=0.85, K=100, k=self.k)
         subset = pr_topk[1]
 
         edge_index, edge_weight = subgraph(subset, edge_index, edge_weights)
@@ -35,7 +36,7 @@ class TopKSubgraph(Augmentor):
         return Graph(x=x, edge_index=edge_index, edge_weights=edge_weights)
 
 # cora = CoraGraphDataset()[0]
-citeseer = CiteseerGraphDataset()[0]
-
+# citeseer = CiteseerGraphDataset()[0]
+pumb = PubmedGraphDataset()[0]
 
 

@@ -78,7 +78,7 @@ def test(encoder_model, data):
 
 def main():
     opt = {}
-    opt['data'] = ['Cora', 'CiteSeer']
+    opt['data'] = ['Cora', 'CiteSeer', 'PubMed']
     opt['aug'] = ['baseline', 'baseline-noFM', 'baseline-noND',
                   'FM+RW', 'FM+DF', 'FM+TopK', 'FM+Khop',
                   'TopK+RW', 'RW+Khop', 'TopK+Khop',
