@@ -1,6 +1,7 @@
 import os
 import sys
 
+import numpy as np
 import torch
 import os.path as osp
 import losses as L
@@ -236,8 +237,7 @@ def main():
         for r in opt['k_ratio']:
             k = round(N * r)
             for num_hop in opt['num_hops']:
-                # for wl_r in opt['walk_length_ratio']:
-                for wl_r in [0.8]:
+                for wl_r in opt['walk_length_ratio']:
                     wl = round(N * wl_r)
                     print(f'=================================================================')
                     print(f'k_ratio={r}, k={k}, KhopSubgraph_num_hops={num_hop}, walk_length_ratio={wl_r}, RWSampling_walk_length={wl}')
@@ -264,6 +264,161 @@ def main():
                 run_model(aug1, aug2)
 
 
+def main_report_bests():
+    data_opt = ['Cora', 'Citeseer']
+    aug_opt = ['baseline', 'baseline-noFM', 'baseline-noND',
+                  'FM+RW', 'FM+DF', 'FM+TopK', 'FM+Khop',
+                  'TopK+RW', 'RW+Khop',
+                  'FM+TopK+RW', 'FM+RW+Khop']
+    data_arg = sys.argv[1]
+    assert data_arg in data_opt
+    aug = sys.argv[2]
+    assert aug in aug_opt
+
+    path = osp.join(osp.expanduser('~'), 'datasets')
+    dataset = Planetoid(path, name=data_arg, transform=T.NormalizeFeatures())
+    data = dataset[0]
+    N = data.num_nodes
+
+    log = open(f"logs/best_res/{data_arg}_{aug}_bests.log", "a")
+    sys.stdout = log
+
+    def repeat_run(aug1, aug2):
+        accs = []
+        tot = 0.0
+        for _ in range(5):
+            gconv = GConv(input_dim=dataset.num_features, hidden_dim=32, activation=torch.nn.ReLU, num_layers=2)
+            encoder_model = Encoder(encoder=gconv, augmentor=(aug1, aug2), hidden_dim=32, proj_dim=32)
+            contrast_model = DualBranchContrast(loss=L.InfoNCE(tau=0.2), mode='L2L', intraview_negs=True)
+            optimizer = Adam(encoder_model.parameters(), lr=0.01)
+
+            with tqdm(total=1000, desc='(T)') as pbar:
+                for epoch in range(1, 1001):
+                    loss = train(encoder_model, contrast_model, data, optimizer)
+                    pbar.set_postfix({'loss': loss})
+                    pbar.update()
+                    if epoch % 200 == 0:
+                        print(f'epoch={epoch}, loss={loss}')
+
+            test_result = test(encoder_model, data)
+            accs.append(test_result['micro_f1'] * 100)
+            tot += test_result['micro_f1']
+            print(f'(E): Best test F1Mi={test_result["micro_f1"]:.4f}, F1Ma={test_result["macro_f1"]:.4f}')
+        print('-' * 100)
+        print('Average accuracy:[{:.4f}]'.format(tot / 10))
+        print('Mean:[{:.4f}]'.format(np.mean(accs)))
+        print('Std :[{:.4f}]'.format(np.std(accs)))
+        print('=' * 100)
+
+    if aug == 'baseline':
+        print('Best result for ER+ND+FM.')
+        pe = 0.6
+        pn = 0.7
+        print(f'aug=[A.EdgeRemoving(pe={pe}), A.NodeDropping(pn={pn}), A.FeatureMasking(pf=0.3)]')
+        print('====================================================================================')
+        aug1 = A.Compose([A.EdgeRemoving(pe=pe), A.NodeDropping(pn=pn), A.FeatureMasking(pf=0.3)])
+        aug2 = A.Compose([A.EdgeRemoving(pe=pe), A.NodeDropping(pn=pn), A.FeatureMasking(pf=0.3)])
+        repeat_run(aug1, aug2)
+
+    if aug == 'baseline-noFM':
+        print('Best result for ER+ND.')
+        pe = 0.4
+        pn = 0.5
+        print(f'aug=[A.EdgeRemoving(pe={pe}), A.NodeDropping(pn={pn})]')
+        print('====================================================================================')
+        aug1 = A.Compose([A.EdgeRemoving(pe=pe), A.NodeDropping(pn=pn)])
+        aug2 = A.Compose([A.EdgeRemoving(pe=pe), A.NodeDropping(pn=pn)])
+        repeat_run(aug1, aug2)
+
+    if aug == 'baseline-noND':
+        print('Best result for ER+FM.')
+        pe = 0.1
+        print(f'aug=[A.EdgeRemoving(pe={pe}), A.FeatureMasking(pf=0.3)]')
+        print('====================================================================================')
+        aug1 = A.Compose([A.EdgeRemoving(pe=pe), A.FeatureMasking(pf=0.3)])
+        aug2 = A.Compose([A.EdgeRemoving(pe=pe), A.FeatureMasking(pf=0.3)])
+        repeat_run(aug1, aug2)
+
+    if aug == 'FM+RW':
+        print('Best result for FM+RW.')
+        wl = 200
+        print(f'=================================================================')
+        print(f'RWSampling_walk_length={wl}')
+        aug1 = A.Compose([A.RWSampling(num_seeds=1000, walk_length=wl),
+                          A.FeatureMasking(pf=0.3)])
+        aug2 = A.Compose([A.RWSampling(num_seeds=1000, walk_length=wl),
+                          A.FeatureMasking(pf=0.3)])
+        repeat_run(aug1, aug2)
+
+    if aug == 'FM+DF':
+        print('Best result for FM+DF.')
+        a = 0.01
+        print(f'=================================================================')
+        print(f'PPRDiffusion_alpha={a}')
+        aug1 = A.Compose([A.FeatureMasking(pf=0.3),
+                          A.PPRDiffusion(alpha=a)])
+        aug2 = A.Compose([A.FeatureMasking(pf=0.3),
+                          A.PPRDiffusion(alpha=a)])
+        repeat_run(aug1, aug2)
+
+    if aug == 'FM+TopK':
+        print('Best result for FM+TopK.')
+        k = 800
+        print(f'=================================================================')
+        print(f'TopKSubgraph_k={k}')
+        aug1 = A.Compose([A.FeatureMasking(pf=0.3),
+                          A.TopKSubgraph(N, k=k)])
+        aug2 = A.Compose([A.FeatureMasking(pf=0.3),
+                          A.TopKSubgraph(N, k=k)])
+        repeat_run(aug1, aug2)
+
+    if aug == 'FM+Khop':
+        print('Best result for FM+Khop.')
+        r = 0.2
+        k = round(N * r)
+        num_hop = 4
+        print(f'=================================================================')
+        print(f'k_ratio={r}, k={k}, KhopSubgraph_num_hops={num_hop}')
+        aug1 = A.Compose([A.FeatureMasking(pf=0.3),
+                          A.KhopSubgraph(N, k=k, num_hops=num_hop)])
+        aug2 = A.Compose([A.FeatureMasking(pf=0.3),
+                          A.KhopSubgraph(N, k=k, num_hops=num_hop)])
+        repeat_run(aug1, aug2)
+
+    if aug == 'FM+RW+TopK':
+        print('Best result for FM+RW+TopK.')
+        r = 0.7
+        k = round(N * r)
+        wl_r = 0.2
+        wl = round(N * wl_r)
+        print(f'=================================================================')
+        print(f'k_ratio={r}, TopKSubgraph_k={k}, walk_length_ratio={wl_r}, RWSampling_walk_length={wl}')
+        aug1 = A.Compose([A.RWSampling(num_seeds=1000, walk_length=wl),
+                          A.TopKSubgraph(N, k=k),
+                          A.FeatureMasking(pf=0.3)])
+        aug2 = A.Compose([A.RWSampling(num_seeds=1000, walk_length=wl),
+                          A.TopKSubgraph(N, k=k),
+                          A.FeatureMasking(pf=0.3)])
+        repeat_run(aug1, aug2)
+
+    if aug == 'FM+RW+Khop':
+        print('Best result for FM+RW+Khop.')
+        r = 0.3
+        k = round(N * r)
+        wl_r = 0.1
+        wl = round(N * wl_r)
+        num_hop = 4
+        print(f'=================================================================')
+        print(f'k_ratio={r}, k={k}, KhopSubgraph_num_hops={num_hop}, walk_length_ratio={wl_r}, RWSampling_walk_length={wl}')
+        aug1 = A.Compose([A.RWSampling(num_seeds=1000, walk_length=wl),
+                          A.KhopSubgraph(N, k=k, num_hops=num_hop),
+                          A.FeatureMasking(pf=0.3)])
+        aug2 = A.Compose([A.RWSampling(num_seeds=1000, walk_length=wl),
+                          A.KhopSubgraph(N, k=k, num_hops=num_hop),
+                          A.FeatureMasking(pf=0.3)])
+        repeat_run(aug1, aug2)
+
+
 if __name__ == '__main__':
-    main()
-    # print(torch.__version__)
+    # main()
+    main_report_bests()

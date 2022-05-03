@@ -19,7 +19,7 @@ class LogisticRegression(nn.Module):
 
 
 class LREvaluator(BaseEvaluator):
-    def __init__(self, num_epochs: int = 200, learning_rate: float = 0.01,
+    def __init__(self, num_epochs: int = 1000, learning_rate: float = 0.01,
                  weight_decay: float = 0.0, test_interval: int = 20):
         self.num_epochs = num_epochs
         self.learning_rate = learning_rate
