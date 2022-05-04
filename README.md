@@ -24,14 +24,34 @@ GAugCL-kr needs the following packages to be installed beforehand:
 # Execution
 `python train.py <dataset> <augmentor>`
 
+`<dataset> in ['Cora', 'Citeseer']`
+
+`<augmentor> in [baseline', 'baseline-noFM', 'baseline-noND',
+                  'FM+RW', 'FM+DF', 'FM+TopK', 'FM+Khop',
+                  'FM+RW+TopK', 'FM+RW+Khop']`
+
 eg. `python train.py Cora baseline`
 
 To avoid UserWarning: resource_tracker Warning, add `-W ignore`
 
+There is a bit hard coding. If you want to use Citeseer dataset, please go to `augmentors/khop_sub.py`, and uncomment below lines: 
+```python
+pr_topk = topk_idx(citeseer, self.N, DAMP=0.85, K=100, k=self.k)
+trick = torch.tensor([3326])
+citeseer = CiteseerGraphDataset()[0]
+```
+
+Also, in `augmentors/topk_sub.py`, uncomment:
+```python
+pr_topk = topk_idx(citeseer, self.N, DAMP=0.85, K=100, k=self.k)
+citeseer = CiteseerGraphDataset()[0]
+```
+
+
 # Datasets used and example results
 * Cora
 * CiteSeer
-* See .log files in `logs/`
+* See .log files in `logs/*`
 
 
 # Overview
@@ -48,7 +68,7 @@ The model also implements utilities for training models, evaluating model perfor
 
 ## Graph Augmentation
 
-In `GCL.augmentors`, GAugCL-kr provides the `Augmentor` base class, which offers a universal interface for graph augmentation functions. Specifically, PyGCL implements the following augmentation functions:
+In `augmentors`, GAugCL-kr provides the `Augmentor` base class, which offers a universal interface for graph augmentation functions. Specifically, GAugCL-kr implements the following augmentation functions:
 
 | Augmentation                            | Class name       |
 |-----------------------------------------|------------------|
@@ -64,12 +84,18 @@ In `GCL.augmentors`, GAugCL-kr provides the `Augmentor` base class, which offers
 Call these augmentation functions by feeding with a `Graph` in a tuple form of node features, edge index, and edge features `(x, edge_index, edge_attrs)` will produce corresponding augmented graphs.
 
 To compose a list of augmentation instances `augmentors`, you need to use the `Compose` class:
-
-
 ```python
 import augmentors as A
 
 aug = A.Compose([A.EdgeRemoving(pe=0.3), A.FeatureMasking(pf=0.3)])
+```
+You can also use the RandomChoice class to randomly draw a few augmentations each time:
+```python
+import augmentors as A
+
+aug = A.RandomChoice([A.RWSampling(num_seeds=1000, walk_length=200),
+                          A.TopKSubgraph(N, k=10),
+                          A.FeatureMasking(pf=0.3)])
 ```
 
 
