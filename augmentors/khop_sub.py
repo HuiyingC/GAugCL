@@ -125,15 +125,15 @@ class KhopSubgraph(Augmentor):
     def augment(self, g: Graph) -> Graph:
         x, edge_index, edge_weights = g.unfold()
 
-        # pr_topk = topk_idx(cora, self.N, DAMP=0.85, K=100, k=self.k)
-        pr_topk = topk_idx(citeseer, self.N, DAMP=0.85, K=100, k=self.k)
+        pr_topk = topk_idx(cora, self.N, DAMP=0.85, K=100, k=self.k)
+        # pr_topk = topk_idx(citeseer, self.N, DAMP=0.85, K=100, k=self.k)
         # pr_topk = topk_idx(pumb, self.N, DAMP=0.85, K=100, k=self.k)
         topk_subset = pr_topk[1]
         # print('topk_subset', topk_subset)
 
         # trick for citeseer dataset error: IndexError: index out of range in self
-        # trick = torch.tensor([2707])
-        trick = torch.tensor([3326])
+        trick = torch.tensor([2707])
+        # trick = torch.tensor([3326])
         # trick = torch.tensor([19716])
 
         topk_subset = torch.cat((topk_subset,trick))
@@ -147,8 +147,8 @@ class KhopSubgraph(Augmentor):
         return Graph(x=x, edge_index=edge_index, edge_weights=edge_weights)
 
 
-# cora = CoraGraphDataset()[0]
-citeseer = CiteseerGraphDataset()[0]
+cora = CoraGraphDataset()[0]
+# citeseer = CiteseerGraphDataset()[0]
 # pumb = PubmedGraphDataset()[0]
 
 

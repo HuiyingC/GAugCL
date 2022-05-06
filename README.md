@@ -1,7 +1,7 @@
 
-# Install
+# CAugCL-kr
 
-## Prerequisites
+## Installation Prerequisites
 
 GAugCL-kr needs the following packages to be installed beforehand:
 
@@ -21,6 +21,11 @@ GAugCL-kr needs the following packages to be installed beforehand:
 * sphinx-autodoc-typehints==1.12.0
 * livereload==2.6.3
 
+
+## For Dr. Hamdi:
+To avoid any environment conflict issues, which bring me lots of headache, and for your grading convenience, I made a Jupyter Notebook with running experiments on Cora dataset. You can refer to [examples_cora.ipynb](examples_cora.ipynb).
+
+
 # Execution
 `python train.py <dataset> <augmentor>`
 
@@ -34,24 +39,25 @@ eg. `python train.py Cora baseline`
 
 To avoid UserWarning: resource_tracker Warning, add `-W ignore`
 
-There is a bit hard coding. If you want to use Citeseer dataset, please go to `augmentors/khop_sub.py`, and uncomment below lines: 
+There is a bit hard coding. If you want to use Citeseer dataset, please go to [augmentors/khop_sub.py](augmentors/khop_sub.py), and uncomment below lines: 
 ```python
 pr_topk = topk_idx(citeseer, self.N, DAMP=0.85, K=100, k=self.k)
 trick = torch.tensor([3326])
 citeseer = CiteseerGraphDataset()[0]
 ```
 
-Also, in `augmentors/topk_sub.py`, uncomment:
+Also, in [augmentors/topk_sub.py](augmentors/topk_sub.py), uncomment:
 ```python
 pr_topk = topk_idx(citeseer, self.N, DAMP=0.85, K=100, k=self.k)
 citeseer = CiteseerGraphDataset()[0]
 ```
 
 
-# Datasets used and example results
+# Datasets Used and Example Results
 * Cora
 * CiteSeer
-* See .log files in `logs/*`
+* See .log files in [logs/*](logs/)
+
 
 
 # Overview
@@ -68,7 +74,7 @@ The model also implements utilities for training models, evaluating model perfor
 
 ## Graph Augmentation
 
-In `augmentors`, GAugCL-kr provides the `Augmentor` base class, which offers a universal interface for graph augmentation functions. Specifically, GAugCL-kr implements the following augmentation functions:
+In [augmentors](augmentors), GAugCL-kr provides the `Augmentor` base class, which offers a universal interface for graph augmentation functions. Specifically, GAugCL-kr implements the following augmentation functions:
 
 | Augmentation                            | Class name       |
 |-----------------------------------------|------------------|
@@ -101,7 +107,7 @@ aug = A.RandomChoice([A.RWSampling(num_seeds=1000, walk_length=200),
 
 ## Contrastive Objectives
 
-In `losses`, GAugCL-kr implements the following contrastive objectives:
+In [losses](losses), GAugCL-kr implements the following contrastive objectives:
 
 | Contrastive objectives               | Class name        |
 | ------------------------------------ | ----------------- |
@@ -111,7 +117,7 @@ In `losses`, GAugCL-kr implements the following contrastive objectives:
 
 ## Utilities
 
-Evaluator functions to evaluate the embedding quality:
+[Evaluator functions](eval) to evaluate the embedding quality:
 
 | Evaluator              | Class name     |
 | ---------------------- | -------------- |
@@ -119,3 +125,13 @@ Evaluator functions to evaluate the embedding quality:
 | Support vector machine | `SVMEvaluator` |
 | Random forest          | `RFEvaluator`  |
 
+
+# Baselines
+[baselines](baselines) to compare results with state-art-of prior works:
+
+| Baseline  | File            | Paper                                                                                                                                                    |
+|-----------|-----------------|------------------------|
+| GRACE     | `GRACE.py`      | [ICML 2020_Deep Graph Contrastive Representation Learning](https://arxiv.org/abs/2006.04131)    |
+| GraphCL   | `GraphCL.py`    | [NeurIPS 2020_Graph Contrastive Learning with Augmentations](https://arxiv.org/abs/2010.13902)   |
+| InfoGraph | `InfoGraph.py`  | [NeurIPS 2021_InfoGCL: Information-Aware Graph Contrastive Learning](https://proceedings.neurips.cc/paper/2021/file/ff1e68e74c6b16a1a7b5d958b95e120c-Paper.pdf) |
+| MVGRL     | `MVGRL_node.py` | [ICML 2020_Contrastive Multi-View Representation Learning on Graphs](https://arxiv.org/abs/2006.05582)    |
